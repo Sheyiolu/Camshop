@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Product page</title>
+
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet" />
+
+    <!-- Bootstrap css -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" /> -->
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- Slick -->
+    <link type="text/css" rel="stylesheet" href="css/slick.css" />
+    <link type="text/css" rel="stylesheet" href="css/slick-theme.css" />
+
+    <!-- nouislider -->
+    <link type="text/css" rel="stylesheet" href="css/nouislider.min.css" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+
+    <!-- Main stylesheet -->
+    <link type="text/css" rel="stylesheet" href="css/main.css" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <!-- Top header -->
+        <div id="top-header">
+            <div class="container">
+                <ul class="header-links pull-left">
+                    <li><a href="#">Gift Cards</a></li>
+                    <li><a href="#">Rent Camera</a></li>
+                    <li><a href="#">Repairs</a></li>
+                </ul>
+                <ul class="header-links pull-right">
+                    <li><a href="#">Sell on CamShop</a></li>
+                    <li class="dropdown">
+                        <a class="dropbtn dropdown-toggle" id="triggerId" data-toggle="dropdown" aria-haspopup="true"
+                            href="#">Need Help? <i class="fas fa-caret-down"></i></a>
+                        <ul class="dropdown-content" id="help-content" aria-labelledby="triggerId">
+                            <li class="dropdown-item"><a href="#">FAQs</a></li>
+                            <li class="dropdown-item"><a href="#">Contact Us</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- /Top header -->
+        <div id="header">
+            <div class="container">
+                <div class="row">
+                    <!-- LOGO & ACCOUNT CONTAINER -->
+                    <div class="">
+                        <!-- LOGO -->
+                        <div class="col-md-3 menu-logo">
+                            <!-- Toggle Menu -->
+                            <div class="menu-toggle logo-menu-container">
+                                <a href="#">
+                                    <i class="fa fa-bars"></i>
+                                    <!-- <span>Menu</span> -->
+                                </a>
+                            </div>
+                            <!-- /Toggle Menu -->
+                            <div class="logo-menu-container">
+                                <a href="#" class="logo">
+                                    <img src="./img/camshop logo.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <!-- /LOGO -->
+
+                        <!-- ACCOUNT -->
+                        <div class="col-md-3 col-md-push-6 clearfix account-cart">
+                            <div class="header-personal">
+                                <div class="dropdown">
+                                    <a class="dropbtn dropdown-toggle" id="triggerId" data-toggle="dropdown"
+                                        aria-haspopup="true" href="#">
+                                        <i class="fa fa-user-circle"></i><span>Account <i
+                                                class="fas fa-caret-down"></i></span>
+                                    </a>
+                                    <ul class="dropdown-content" id="account-content" aria-labelledby="triggerId">
+                                        <li class="dropdown-item"><a href="#">Register</a></li>
+                                        <li class="dropdown-item"><a href="#">Sign-in</a></li>
+                                        <li class="dropdown-item"><a href="#">Wishlist</a></li>
+                                        <li class="dropdown-item"><a href="#">Order Status</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class=" cart">
+                                    <a href="#">
+                                        <i class="fa fa-shopping-cart"></i>
+                                        <span>Cart</span>
+                                        <div class="qty">0</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /ACCOUNT -->
+                    </div>
+                    <!-- /LOGO & ACCOUNT CONTAINER -->
+
+                    <!-- SEARCH BAR -->
+                    <div class="col-md-6 col-md-pull-3 col-xs-12">
+                        <div class="header-search-box">
+                            <form>
+                                <input class="input" placeholder="Search here...">
+                                <button class="search-btn">Search</button>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- /SEARCH BAR -->
+
+
+                </div>
+                <!-- row -->
+            </div>
+            <!-- container -->
+        </div>
+    </header>
+    <!-- /HEADER -->
+
+    <!-- NAVIGATION -->
+    <nav id="navigation">
+        <div class="container">
+            <!-- menu-nav -->
+            <div id="menu-nav">
+                <!-- NAV -->
+                <ul class="main-nav nav navbar-nav">
+                    <li class="active dropdown">
+                        <a class="dropbtn dropdown-toggle" id="triggerId" data-toggle="dropdown" aria-haspopup="true"
+                            href="#">Departments <i class="fas fa-caret-down"></i></a>
+                        <ul class="dropdown-content" id="department-content" aria-labelledby="triggerId">
+                            <li class="dropdown-item"><a href="#">Cameras</a></li>
+                            <li class="dropdown-item"><a href="#">Pro Video</a></li>
+                            <li class="dropdown-item"><a href="#">Pro Audio</a></li>
+                            <li class="dropdown-item"><a href="#">Surveillance</a></li>
+                            <li class="dropdown-item"><a href="#">Drones & Action Cameras</a></li>
+                            <li class="dropdown-item"><a href="#">Lenses</a></li>
+                            <li class="dropdown-item"><a href="#">Tripods</a></li>
+                            <li class="dropdown-item"><a href="#">Studio & Lighting</a></li>
+                            <li class="dropdown-item"><a href="#">More</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Top Deals</a></li>
+                    <li><a href="#">Special Offers</a></li>
+                    <li><a href="#">Refurbished</a></li>
+                    <li><a href="#">Used</a></li>
+                    <li><a href="#">Rebate Center</a></li>
+                    <li><a href="#">Overstock</a></li>
+                </ul>
+                <!-- /NAV -->
+            </div>
+            <!-- /menu-nav -->
+        </div>
+    </nav>
+    <!-- /NAVIGATION -->
+
+    <!-- BREADCRUMB -->
+    <div id="breadcrumb" class="section">
+        <!-- container -->
+        <div class="container">
+            <!-- row -->
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="breadcrumb-tree">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Departments</a></li>
+                        <li><a href="#">Cameras</a></li>
+                        <li><a href="#">Digital SLR Cameras</a></li>
+                        <li class="active">Nikon D850</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- /row -->
+        </div>
+        <!-- /container -->
+    </div>
+    <!-- /BREADCRUMB -->
+
+    <!-- SECTION -->
+    <div class="section">
+        <!-- container -->
+        <div class="container">
+            <!-- row -->
+            <div class="row">
+                <!-- Product main img -->
+                <div class="col-md-5 col-md-push-2">
+                    <div id="product-main-img">
+                        <div class="product-preview">
+                            <img src="./img/photography/inkd850.jpg" alt="">
+                        </div>
+
+                        <div class="product-preview">
+                            <img src="./img/photography/inkd850_1.jpg" alt="">
+                        </div>
+
+                        <div class="product-preview">
+                            <img src="./img/photography/inkd850_2.jpg" alt="">
+                        </div>
+
+                        <div class="product-preview">
+                            <img src="./img/photography/inkd850_3.jpg" alt="">
+                        </div>
+                        <div class="product-preview">
+                            <img src="./img/photography/inkd850_4.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- /Product main img -->
+
+                <!-- Product thumb imgs -->
+                <div class="col-md-2  col-md-pull-5">
+                    <div id="product-imgs">
+                        <div class="product-preview">
+                            <img src="./img/photography/inkd850.jpg" alt="">
+                        </div>
+
+                        <div class="product-preview">
+                            <img src="./img/photography/inkd850_1.jpg" alt="">
+                        </div>
+
+                        <div class="product-preview">
+                            <img src="./img/photography/inkd850_2.jpg" alt="">
+                        </div>
+
+                        <div class="product-preview">
+                            <img src="./img/photography/inkd850_3.jpg" alt="">
+                        </div>
+                        <div class="product-preview">
+                            <img src="./img/photography/inkd850_4.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- /Product thumb imgs -->
+
+                <!-- Product details -->
+                <div class="col-md-5">
+                    <div class="product-details">
+                        <h2 class="product-name">Nikon D850 DSLR</h2>
+                        <div>
+                            <div class="product-rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            <a class="review-link" href="#">3 Review(s) | Add your review</a>
+                        </div>
+                        <div>
+                            Brand: <a class="review-link" href="#"><b>Nikon</b></a>
+                        </div>
+                        <div>
+                            <h3 class="product-price">$2789.99 <del class="product-old-price">$3299.95</del></h3>
+                            <span class="product-available">In Stock</span>
+                        </div>
+                        <div>
+                            <ul>
+                                <li>Nikon-designed back-side illuminated (BSI) full-frame image sensor with no optical
+                                    low-pass filter</li>
+                                <li>Up to 9 fps continuous shooting at full resolution with full AF performance</li>
+                                <li>4K Ultra HD video recording, slow motion up to 120FPS at 1080p</li>
+                                <li>45.7 megapixels of extraordinary resolution, outstanding dynamic range & virtually
+                                    no risk of moire</li>
+                                <li>8K and 4K time-lapse movies with new levels of sharpness and detail</li>
+                                <li>Tilting touchscreen, Focus Shift shooting mode, outstanding battery performance and
+                                    much more</li>
+                                <li>The lowest base ISO (ISO 64) of any DSLR or mirrorless camera</li>
+                                <li><a href="#description">See more product details</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- <div class="product-options">
+                            <label>
+                                Size
+                                <select class="input-select">
+                                    <option value="0">X</option>
+                                </select>
+                            </label>
+                            <label>
+                                Color
+                                <select class="input-select">
+                                    <option value="0">Red</option>
+                                </select>
+                            </label>
+                        </div> -->
+
+                        <div class="add-to-cart">
+                            <!-- <div class="qty-label">
+                                Qty
+                                <div class="input-number">
+                                    <input type="number">
+                                    <span class="qty-up">+</span>
+                                    <span class="qty-down">-</span>
+                                </div>
+                            </div> -->
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                            <button class="add-to-cart-btn">Add to Wishlist</button>
+                        </div>
+
+                        <ul class="product-btns">
+                            <li><a href="#">Compare with similar items</a></li>
+                        </ul>
+
+                        <ul class="product-links">
+                            <li>Departments:</li>
+                            <li><a href="#">Cameras</a></li>
+                            <li><a href="#">Digital SLR Cameras</a></li>
+                        </ul>
+
+                        <ul class="product-links product-share">
+                            <li>Share:</li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                        </ul>
+
+                    </div>
+                </div>
+                <!-- /Product details -->
+
+                <!-- Product tab -->
+                <div class="col-md-12">
+                    <div id="product-tab">
+                        <!-- product tab nav -->
+                        <ul class="tab-nav">
+                            <li id="description" class="active"><a data-toggle="tab" href="#tab1">Description</a></li>
+                            <li><a data-toggle="tab" href="#tab2">Specifications</a></li>
+                            <li><a data-toggle="tab" href="#tab3">Reviews (3)</a></li>
+                        </ul>
+                        <!-- /product tab nav -->
+
+                        <!-- product tab content -->
+                        <div class="tab-content">
+                            <!-- tab1  -->
+                            <div id="tab1" class="tab-pane fade in active">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                                            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /tab1  -->
+
+                            <!-- tab2  -->
+                            <div id="tab2" class="tab-pane fade in">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                                            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /tab2  -->
+
+                            <!-- tab3  -->
+                            <div id="tab3" class="tab-pane fade in">
+                                <div class="row">
+                                    <!-- Rating -->
+                                    <div class="col-md-3">
+                                        <div id="rating">
+                                            <div class="rating-avg">
+                                                <span>4.5</span>
+                                                <div class="rating-stars">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                </div>
+                                            </div>
+                                            <ul class="rating">
+                                                <li>
+                                                    <div class="rating-stars">
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                    </div>
+                                                    <div class="rating-progress">
+                                                        <div style="width: 80%;"></div>
+                                                    </div>
+                                                    <span class="sum">3</span>
+                                                </li>
+                                                <li>
+                                                    <div class="rating-stars">
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star-o"></i>
+                                                    </div>
+                                                    <div class="rating-progress">
+                                                        <div style="width: 60%;"></div>
+                                                    </div>
+                                                    <span class="sum">2</span>
+                                                </li>
+                                                <li>
+                                                    <div class="rating-stars">
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star-o"></i>
+                                                        <i class="fa fa-star-o"></i>
+                                                    </div>
+                                                    <div class="rating-progress">
+                                                        <div></div>
+                                                    </div>
+                                                    <span class="sum">0</span>
+                                                </li>
+                                                <li>
+                                                    <div class="rating-stars">
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star-o"></i>
+                                                        <i class="fa fa-star-o"></i>
+                                                        <i class="fa fa-star-o"></i>
+                                                    </div>
+                                                    <div class="rating-progress">
+                                                        <div></div>
+                                                    </div>
+                                                    <span class="sum">0</span>
+                                                </li>
+                                                <li>
+                                                    <div class="rating-stars">
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star-o"></i>
+                                                        <i class="fa fa-star-o"></i>
+                                                        <i class="fa fa-star-o"></i>
+                                                        <i class="fa fa-star-o"></i>
+                                                    </div>
+                                                    <div class="rating-progress">
+                                                        <div></div>
+                                                    </div>
+                                                    <span class="sum">0</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- /Rating -->
+
+                                    <!-- Reviews -->
+                                    <div class="col-md-6">
+                                        <div id="reviews">
+                                            <ul class="reviews">
+                                                <li>
+                                                    <div class="review-heading">
+                                                        <h5 class="name">Collins</h5>
+                                                        <p class="date">5 JAN 2019, 2:00 PM</p>
+                                                        <div class="review-rating">
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star-o empty"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="review-body">
+                                                        <p>Excellent product that works like the camera I always wanted.
+                                                            I highly recommend this body over all others in the Nikon
+                                                            line except for the D5</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="review-heading">
+                                                        <h5 class="name">Sandra</h5>
+                                                        <p class="date">27 JAN 2019, 6:00 PM</p>
+                                                        <div class="review-rating">
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="review-body">
+                                                        <p>I love my D850. Great picture quality straight out of the
+                                                            camera in Raw. 7 fps at 46 mp is amazing. Very easy to
+                                                            customize the controls. The build quality is excellent. It
+                                                            is solid but it is not a light camera, but feels great in my
+                                                            hands. I would highly recommend the D850 to any one looking
+                                                            for a top notch pro camera.</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="review-heading">
+                                                        <h5 class="name">Olakunle</h5>
+                                                        <p class="date">30 JAN 2019, 4:00 PM</p>
+                                                        <div class="review-rating">
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star-o empty"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="review-body">
+                                                        <p>I have been using my D850 for almost a year now and am blown
+                                                            away by the awesome picture quality that it gives me every
+                                                            single time</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="reviews-pagination">
+                                                <li class="active">1</li>
+                                                <li><a href="#">2</a></li>
+                                                <li><a href="#">3</a></li>
+                                                <li><a href="#">4</a></li>
+                                                <li><a href="#"><i class="fa fa-angle-right"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- /Reviews -->
+
+                                    <!-- Review Form -->
+                                    <div class="col-md-3">
+                                        <div id="review-form">
+                                            <form class="review-form">
+                                                <input class="input" type="text" placeholder="Your Name">
+                                                <input class="input" type="email" placeholder="Your Email">
+                                                <textarea class="input" placeholder="Your Review"></textarea>
+                                                <div class="input-rating">
+                                                    <span>Your Rating: </span>
+                                                    <div class="stars">
+                                                        <input id="star5" name="rating" value="5" type="radio"><label
+                                                            for="star5"></label>
+                                                        <input id="star4" name="rating" value="4" type="radio"><label
+                                                            for="star4"></label>
+                                                        <input id="star3" name="rating" value="3" type="radio"><label
+                                                            for="star3"></label>
+                                                        <input id="star2" name="rating" value="2" type="radio"><label
+                                                            for="star2"></label>
+                                                        <input id="star1" name="rating" value="1" type="radio"><label
+                                                            for="star1"></label>
+                                                    </div>
+                                                </div>
+                                                <button class="primary-btn">Submit</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <!-- /Review Form -->
+                                </div>
+                            </div>
+                            <!-- /tab3  -->
+                        </div>
+                        <!-- /product tab content  -->
+                    </div>
+                </div>
+                <!-- /product tab -->
+            </div>
+            <!-- /row -->
+        </div>
+        <!-- /container -->
+    </div>
+    <!-- /SECTION -->
+
+    <!-- Section -->
+    <div class="section">
+        <!-- container -->
+        <div class="container">
+            <!-- row -->
+            <div class="row">
+
+                <div class="col-md-12">
+                    <div class="section-title text-center">
+                        <h3 class="title">Related Products</h3>
+                    </div>
+                </div>
+                <!-- Products tab & slick -->
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="products-tabs">
+                            <!-- tab -->
+                            <div id="tab2" class="tab-pane active">
+                                <div class="products-slick" data-nav="#slick-nav-2">
+
+                                    <!-- product -->
+                                    <div class="product">
+                                        <a href="#">
+                                            <div class="product-img">
+                                                <img src="./img/photography/fj600018323.jpg" alt="">
+                                            </div>
+                                            <div class="product-body">
+                                                <!-- <p class="product-category">Category</p> -->
+                                                <p class="product-name">
+                                                    Fujifilm Wallet Album, Holds 108 Instax Mini Instant Film Prints,
+                                                    Ice Blue</p>
+                                                <h3 class="product-price">$6.99 <del
+                                                        class="product-old-price">$9.00</del></h3>
+                                                <!-- <div class="product-rating">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div> -->
+                                                <!-- <div class="product-btns">
+                                            <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span
+                                                    class="tooltipp">add to wishlist</span></button>
+                                            <button class="add-to-compare"><i class="fa fa-exchange"></i><span
+                                                    class="tooltipp">add to compare</span></button>
+                                            <button class="quick-view"><i class="fa fa-eye"></i><span
+                                                    class="tooltipp">quick view</span></button>
+                                        </div> -->
+                                            </div>
+                                            <!-- <div class="add-to-cart">
+                                        <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to
+                                            cart</button>
+                                    </div> -->
+                                        </a>
+                                    </div>
+                                    <!-- /product -->
+
+                                    <!-- product -->
+                                    <div class="product">
+                                        <a href="#">
+                                            <div class="product-img">
+                                                <img src="./img/photography/fpufo2bk.jpg" alt="">
+                                                <div class="product-label">
+                                                    <span class="new">NEW</span>
+                                                </div>
+                                            </div>
+                                            <div class="product-body">
+                                                <!-- <p class="product-category">Category</p> -->
+                                                <p class="product-name">FotoPro UFO 2 Flexible Tripod with Smartphone
+                                                    and GoPro Adapter, Black</p>
+                                                <h3 class="product-price">$22.99 <del
+                                                        class="product-old-price">$34.50</del></h3>
+                                                <!-- <div class="product-rating">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-o"></i>
+                                        </div> -->
+                                                <!-- <div class="product-btns">
+                                            <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span
+                                                    class="tooltipp">add to wishlist</span></button>
+                                            <button class="add-to-compare"><i class="fa fa-exchange"></i><span
+                                                    class="tooltipp">add to compare</span></button>
+                                            <button class="quick-view"><i class="fa fa-eye"></i><span
+                                                    class="tooltipp">quick view</span></button>
+                                        </div> -->
+                                            </div>
+                                            <!-- <div class="add-to-cart">
+                                        <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to
+                                            cart</button>
+                                    </div> -->
+                                        </a>
+                                    </div>
+                                    <!-- /product -->
+
+                                    <!-- product -->
+                                    <div class="product">
+                                        <a href="#">
+                                            <div class="product-img">
+                                                <img src="./img/photography/ilcq2.jpg" alt="">
+                                                <div class="product-label">
+                                                    <span class="new">NEW</span>
+                                                </div>
+                                            </div>
+                                            <div class="product-body">
+                                                <!-- <p class="product-category">Category</p> -->
+                                                <p class="product-name">Leica Q2 Compact Digital Camerae</p>
+                                                <h3 class="product-price">$4995.00 <del
+                                                        class="product-old-price">$5990.99</del></h3>
+                                                <!-- <div class="product-rating">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-o"></i>
+                                        </div> -->
+                                                <!-- <div class="product-btns">
+                                            <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span
+                                                    class="tooltipp">add to wishlist</span></button>
+                                            <button class="add-to-compare"><i class="fa fa-exchange"></i><span
+                                                    class="tooltipp">add to compare</span></button>
+                                            <button class="quick-view"><i class="fa fa-eye"></i><span
+                                                    class="tooltipp">quick view</span></button>
+                                        </div> -->
+                                            </div>
+                                            <!-- <div class="add-to-cart">
+                                        <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to
+                                            cart</button>
+                                    </div> -->
+                                        </a>
+                                    </div>
+                                    <!-- /product -->
+
+                                    <!-- product -->
+                                    <div class="product">
+                                        <a href="#">
+                                            <div class="product-img">
+                                                <img src="./img/photography/oloc284eu.jpg" alt="">
+                                                <div class="product-label">
+                                                    <!-- <span class="sale">-30%</span> -->
+                                                </div>
+                                            </div>
+                                            <div class="product-body">
+                                                <!-- <p class="product-category">Category</p> -->
+                                                <p class="product-name">
+                                                    Olloclip Fisheye + Super-Wide + Macro 15x Lenses For iPhone 8/7 and
+                                                    8/7 Plus</p>
+                                                <h3 class="product-price">$98.00 <del
+                                                        class="product-old-price">$100.00</del></h3>
+                                                <div class="product-rating">
+                                                </div>
+                                                <!-- <div class="product-btns">
+                                            <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span
+                                                    class="tooltipp">add to wishlist</span></button>
+                                            <button class="add-to-compare"><i class="fa fa-exchange"></i><span
+                                                    class="tooltipp">add to compare</span></button>
+                                            <button class="quick-view"><i class="fa fa-eye"></i><span
+                                                    class="tooltipp">quick view</span></button>
+                                        </div> -->
+                                            </div>
+                                            <!-- <div class="add-to-cart">
+                                        <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to
+                                            cart</button>
+                                    </div> -->
+                                        </a>
+                                    </div>
+                                    <!-- /product -->
+
+                                    <!-- product -->
+                                    <div class="product">
+                                        <a href="#">
+                                            <div class="product-img">
+                                                <img src="./img/photography/ptonebs42.jpg" alt="">
+                                            </div>
+                                            <div class="product-body">
+                                                <!-- <p class="product-category">Category</p> -->
+                                                <p class="product-name">Pictar One Plus Mark II Smartphone Camera Grip,
+                                                    Black/Silver</p>
+                                                <h3 class="product-price">$108.99 <del
+                                                        class="product-old-price">$110.00</del></h3>
+                                                <!-- <div class="product-rating">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div> -->
+                                                <!-- <div class="product-btns">
+                                            <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span
+                                                    class="tooltipp">add to wishlist</span></button>
+                                            <button class="add-to-compare"><i class="fa fa-exchange"></i><span
+                                                    class="tooltipp">add to compare</span></button>
+                                            <button class="quick-view"><i class="fa fa-eye"></i><span
+                                                    class="tooltipp">quick view</span></button>
+                                        </div> -->
+                                            </div>
+                                            <!-- <div class="add-to-cart">
+                                        <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to
+                                            cart</button>
+                                    </div> -->
+                                        </a>
+                                    </div>
+                                    <!-- /product -->
+
+                                    <!-- product -->
+                                    <div class="product">
+                                        <a href="#">
+                                            <div class="product-img">
+                                                <img src="./img/photography/isodsch300.jpg" alt="">
+                                            </div>
+                                            <div class="product-body">
+                                                <!-- <p class="product-category">Category</p> -->
+                                                <p class="product-name">Sony Cyber-Shot DSC-H300 Digital Camera</p>
+                                                <h3 class="product-price">$179.00 <del
+                                                        class="product-old-price">$185.00</del></h3>
+                                                <!-- <div class="product-rating">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div> -->
+                                                <!-- <div class="product-btns">
+                                            <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span
+                                                    class="tooltipp">add to wishlist</span></button>
+                                            <button class="add-to-compare"><i class="fa fa-exchange"></i><span
+                                                    class="tooltipp">add to compare</span></button>
+                                            <button class="quick-view"><i class="fa fa-eye"></i><span
+                                                    class="tooltipp">quick view</span></button>
+                                        </div> -->
+                                            </div>
+                                            <!-- <div class="add-to-cart">
+                                        <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to
+                                            cart</button>
+                                    </div> -->
+                                        </a>
+                                    </div>
+                                    <!-- /product -->
+
+                                    <!-- product -->
+                                    <div class="product">
+                                        <a href="#">
+                                            <div class="product-img">
+                                                <img src="./img/photography/exolptk.jpg" alt="">
+                                                <div class="product-label">
+                                                    <span class="new">NEW</span>
+                                                </div>
+                                            </div>
+                                            <div class="product-body">
+                                                <!-- <p class="product-category">Category</p> -->
+                                                <p class="product-name">ExoLens PRO with Optics by ZEISS Telephoto Kit
+                                                </p>
+                                                <h3 class="product-price">$249.95 <del
+                                                        class="product-old-price">$289.99</del></h3>
+                                                <!-- <div class="product-rating">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </div> -->
+                                                <!-- <div class="product-btns">
+                                                <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span
+                                                        class="tooltipp">add to wishlist</span></button>
+                                                <button class="add-to-compare"><i class="fa fa-exchange"></i><span
+                                                        class="tooltipp">add to compare</span></button>
+                                                <button class="quick-view"><i class="fa fa-eye"></i><span
+                                                        class="tooltipp">quick view</span></button>
+                                            </div> -->
+                                            </div>
+                                            <!-- <div class="add-to-cart">
+                                            <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to
+                                                cart</button>
+                                        </div> -->
+                                        </a>
+                                    </div>
+                                    <!-- /product -->
+                                </div>
+                                <div id="slick-nav-2" class="products-slick-nav"></div>
+                            </div>
+                            <!-- /tab -->
+                        </div>
+                    </div>
+                </div>
+                <!-- Products tab & slick -->
+            </div>
+            <!-- /row -->
+        </div>
+        <!-- /container -->
+    </div>
+    <!-- /Section -->
+
+    <!-- NEWSLETTER -->
+    <div id="newsletter" class="section">
+        <!-- container -->
+        <div class="container">
+            <!-- row -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="newsletter">
+                        <h3>Sign Up for Update on our Best Deals</h3>
+                        <form>
+                            <input class="input" type="email" placeholder="Enter Your email">
+                            <button class="newsletter-btn">Sign Up</button>
+                        </form>
+                        <!-- <ul class="newsletter-follow">
+                                    <li>
+                                        <a href="#"><i class="fa fa-facebook"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-instagram"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                                    </li>
+                                </ul> -->
+                    </div>
+                </div>
+            </div>
+            <!-- /row -->
+        </div>
+        <!-- /container -->
+    </div>
+    <!-- /NEWSLETTER -->
+
+    <!-- FOOTER -->
+    <footer id="footer">
+        <div class="section">
+            <!-- container -->
+            <div class="container">
+                <!-- row -->
+                <div class="row">
+                    <div class="col-md-3 col-xs-6">
+                        <div class="footer">
+                            <h3 class="footer-title">About Us</h3>
+                            <ul class="footer-links">
+                                <li><a href="#">About Camshop</a></li>
+                                <li><a href="#">Investor Relations</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="mailto:camshop@gmail.com" target="_blank">camshop@gmail.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-xs-6">
+                        <div class="footer">
+                            <h3 class="footer-title">Products We Sell</h3>
+                            <ul class="footer-links">
+                                <li><a href="#">Canon Digital Cameras</a></li>
+                                <li><a href="#">Panasonic Digital Cameras</a></li>
+                                <li><a href="#">Nikon Digital Cameras</a></li>
+                                <li><a href="#">Sony Digital Cameras</a></li>
+                                <li><a href="#">SLR Lenses</a></li>
+                                <li><a href="#">Pro Video & Audio</a></li>
+                                <li><a href="#">Used Photo Gear</a></li>
+                                <li><a href="#">More...</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="clearfix visible-xs"></div>
+
+                    <div class="col-md-3 col-xs-6">
+                        <div class="footer">
+                            <h3 class="footer-title">Let Us Help You</h3>
+                            <ul class="footer-links">
+                                <li><a href="#">Customer Service</a></li>
+                                <li><a href="#">Warranty</a></li>
+                                <li><a href="#">Gift Cards</a></li>
+                                <li><a href="#">Track Your Order</a></li>
+                                <li><a href="#">Return Policy</a></li>
+                                <li><a href="#">Warranty</a></li>
+                                <li><a href="#">Rebase Center</a></li>
+                                <li><a href="#">Terms & Conditions</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="col-md-3 col-xs-6">
+                            <div class="footer">
+                                <h3 class="footer-title">More Services</h3>
+                                <ul class="footer-links">
+                                    <li><a href="#">Camera Rentals</a></li>
+                                    <li><a href="#">Service Center</a></li>
+                                    <li><a href="#">Buy Used Equipments</a></li>
+                                    <li><a href="#">Sell Used Equipments</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-xs-6">
+                            <div class="footer">
+                                <h3 class="footer-title">Connect With Us</h3>
+                                <ul class="newsletter-follow">
+                                    <li>
+                                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
+                                                focusable="false" width="1.2em" height="1.2em"
+                                                style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
+                                                preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256">
+                                                <path id="facebook-bg"
+                                                    d="M241.871 256.001c7.802 0 14.129-6.326 14.129-14.129V14.129C256 6.325 249.673 0 241.871 0H14.129C6.324 0 0 6.325 0 14.129v227.743c0 7.803 6.324 14.129 14.129 14.129h227.742"
+                                                    fill="#395185" />
+                                                <path id="letter-f"
+                                                    d="M176.635 256.001v-99.137h33.277l4.982-38.635h-38.259V93.561c0-11.186 3.107-18.809 19.148-18.809l20.459-.009V40.188c-3.54-.471-15.684-1.523-29.812-1.523-29.498 0-49.692 18.005-49.692 51.071v28.493h-33.362v38.635h33.362v99.137h39.897"
+                                                    fill="#FFF" />
+                                                <rect x="0" y="0" width="256" height="256" fill="rgba(0, 0, 0, 0)" />
+                                            </svg></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
+                                                focusable="false" width="1.7em" height="1.2em"
+                                                style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
+                                                preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 209">
+                                                <path
+                                                    d="M256 25.45c-9.42 4.177-19.542 7-30.166 8.27 10.845-6.5 19.172-16.793 23.093-29.057a105.183 105.183 0 0 1-33.351 12.745C205.995 7.201 192.346.822 177.239.822c-29.006 0-52.523 23.516-52.523 52.52 0 4.117.465 8.125 1.36 11.97-43.65-2.191-82.35-23.1-108.255-54.876-4.52 7.757-7.11 16.78-7.11 26.404 0 18.222 9.273 34.297 23.365 43.716a52.312 52.312 0 0 1-23.79-6.57c-.003.22-.003.44-.003.661 0 25.447 18.104 46.675 42.13 51.5a52.592 52.592 0 0 1-23.718.9c6.683 20.866 26.08 36.05 49.062 36.475-17.975 14.086-40.622 22.483-65.228 22.483-4.24 0-8.42-.249-12.529-.734 23.243 14.902 50.85 23.597 80.51 23.597 96.607 0 149.434-80.031 149.434-149.435 0-2.278-.05-4.543-.152-6.795A106.748 106.748 0 0 0 256 25.45"
+                                                    fill="#55acee" />
+                                                <rect x="0" y="0" width="256" height="209" fill="rgba(0, 0, 0, 0)" />
+                                            </svg></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
+                                                focusable="false" width="1.2em" height="1.2em"
+                                                style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
+                                                preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256">
+                                                <radialGradient id="rg" r="150%" cx="30%" cy="107%">
+                                                    <stop stop-color="#fdf497" offset="0" />
+                                                    <stop stop-color="#fdf497" offset="0.05" />
+                                                    <stop stop-color="#fd5949" offset="0.45" />
+                                                    <stop stop-color="#d6249f" offset="0.6" />
+                                                    <stop stop-color="#285AEB" offset="0.9" />
+                                                </radialGradient>
+                                                <path
+                                                    d="M128 23.064c34.177 0 38.225.13 51.722.745 12.48.57 19.258 2.655 23.769 4.408 5.974 2.322 10.238 5.096 14.717 9.575 4.48 4.479 7.253 8.743 9.575 14.717 1.753 4.511 3.838 11.289 4.408 23.768.615 13.498.745 17.546.745 51.723 0 34.178-.13 38.226-.745 51.723-.57 12.48-2.655 19.257-4.408 23.768-2.322 5.974-5.096 10.239-9.575 14.718-4.479 4.479-8.743 7.253-14.717 9.574-4.511 1.753-11.289 3.839-23.769 4.408-13.495.616-17.543.746-51.722.746-34.18 0-38.228-.13-51.723-.746-12.48-.57-19.257-2.655-23.768-4.408-5.974-2.321-10.239-5.095-14.718-9.574-4.479-4.48-7.253-8.744-9.574-14.718-1.753-4.51-3.839-11.288-4.408-23.768-.616-13.497-.746-17.545-.746-51.723 0-34.177.13-38.225.746-51.722.57-12.48 2.655-19.258 4.408-23.769 2.321-5.974 5.095-10.238 9.574-14.717 4.48-4.48 8.744-7.253 14.718-9.575 4.51-1.753 11.288-3.838 23.768-4.408 13.497-.615 17.545-.745 51.723-.745M128 0C93.237 0 88.878.147 75.226.77c-13.625.622-22.93 2.786-31.071 5.95-8.418 3.271-15.556 7.648-22.672 14.764C14.367 28.6 9.991 35.738 6.72 44.155 3.555 52.297 1.392 61.602.77 75.226.147 88.878 0 93.237 0 128c0 34.763.147 39.122.77 52.774.622 13.625 2.785 22.93 5.95 31.071 3.27 8.417 7.647 15.556 14.763 22.672 7.116 7.116 14.254 11.492 22.672 14.763 8.142 3.165 17.446 5.328 31.07 5.95 13.653.623 18.012.77 52.775.77s39.122-.147 52.774-.77c13.624-.622 22.929-2.785 31.07-5.95 8.418-3.27 15.556-7.647 22.672-14.763 7.116-7.116 11.493-14.254 14.764-22.672 3.164-8.142 5.328-17.446 5.95-31.07.623-13.653.77-18.012.77-52.775s-.147-39.122-.77-52.774c-.622-13.624-2.786-22.929-5.95-31.07-3.271-8.418-7.648-15.556-14.764-22.672C227.4 14.368 220.262 9.99 211.845 6.72c-8.142-3.164-17.447-5.328-31.071-5.95C167.122.147 162.763 0 128 0zm0 62.27C91.698 62.27 62.27 91.7 62.27 128c0 36.302 29.428 65.73 65.73 65.73 36.301 0 65.73-29.428 65.73-65.73 0-36.301-29.429-65.73-65.73-65.73zm0 108.397c-23.564 0-42.667-19.103-42.667-42.667S104.436 85.333 128 85.333s42.667 19.103 42.667 42.667-19.103 42.667-42.667 42.667zm83.686-110.994c0 8.484-6.876 15.36-15.36 15.36-8.483 0-15.36-6.876-15.36-15.36 0-8.483 6.877-15.36 15.36-15.36 8.484 0 15.36 6.877 15.36 15.36z"
+                                                    fill="url(#rg)" />
+                                                <rect x="0" y="0" width="256" height="256" fill="rgba(0, 0, 0, 0)" />
+                                            </svg></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
+                                                focusable="false" width="1.2em" height="1.2em"
+                                                style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
+                                                preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256">
+                                                <path
+                                                    d="M0 128.002c0 52.414 31.518 97.442 76.619 117.239-.36-8.938-.064-19.668 2.228-29.393 2.461-10.391 16.47-69.748 16.47-69.748s-4.089-8.173-4.089-20.252c0-18.969 10.994-33.136 24.686-33.136 11.643 0 17.268 8.745 17.268 19.217 0 11.704-7.465 29.211-11.304 45.426-3.207 13.578 6.808 24.653 20.203 24.653 24.252 0 40.586-31.149 40.586-68.055 0-28.054-18.895-49.052-53.262-49.052-38.828 0-63.017 28.956-63.017 61.3 0 11.152 3.288 19.016 8.438 25.106 2.368 2.797 2.697 3.922 1.84 7.134-.614 2.355-2.024 8.025-2.608 10.272-.852 3.242-3.479 4.401-6.409 3.204-17.884-7.301-26.213-26.886-26.213-48.902 0-36.361 30.666-79.961 91.482-79.961 48.87 0 81.035 35.364 81.035 73.325 0 50.213-27.916 87.726-69.066 87.726-13.819 0-26.818-7.47-31.271-15.955 0 0-7.431 29.492-9.005 35.187-2.714 9.869-8.026 19.733-12.883 27.421a127.897 127.897 0 0 0 36.277 5.249c70.684 0 127.996-57.309 127.996-128.005C256.001 57.309 198.689 0 128.005 0 57.314 0 0 57.309 0 128.002z"
+                                                    fill="#CB1F27" />
+                                                <rect x="0" y="0" width="256" height="256" fill="rgba(0, 0, 0, 0)" />
+                                            </svg></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /row -->
+            </div>
+            <!-- /container -->
+        </div>
+    </footer>
+    <!-- /FOOTER -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/nouislider.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
